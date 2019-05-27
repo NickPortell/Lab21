@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Registration";
+}
+
+<h2>Welcome to GC Coffee</h2>
+<h2>Shop! @ViewBag.Title</h2>
+
+<form action="/Home/Welcome" method="get">
+    <ul>
+        <li>Enter Username: <input type="text" name="userName" /></li>
+        <li>Enter Email: <input type="email" name="email" /></li>
+        <li>
+            Enter Password: <input type="password" name="password"/>
+        </li>
+    </ul>
+    <input type="submit" value="Submit" />
+</form>
+<style>
+    ul{
+        padding-left: inherit;
+        list-style: none;
+        display:table;
+    }
+    li{
+        display:table-row;
+    }
+    input{
+        display:table-cell;
+    }
+    submit:hover{
+        background-color:darkslategray;
+        color:forestgreen;
+    }
+
+</style>
